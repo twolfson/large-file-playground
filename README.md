@@ -32,6 +32,24 @@ We've skipped these projects due to requiring a non-3rd party hosting service (e
 ### Pending exploration
 - [git-bigstore](https://github.com/lionheart/git-bigstore)
     - Looks great, let's check it out (purpose of this repo)
+    - Has some global dependencies due to `pip`, not a lot but some
+        ```
+        boto==2.48.0
+        boto3==1.6.11
+        botocore==1.9.11
+        docutils==0.14
+        futures==3.2.0
+        git-bigstore==1.0.1
+        gitdb==0.6.4
+        GitPython==1.0.2
+        jmespath==0.9.3
+        python-cloudfiles==1.7.11
+        python-dateutil==2.7.0
+        pytz==2018.3
+        s3transfer==0.1.13
+        six==1.11.0
+        smmap==0.9.0
+        ```
 
 ## Unlicense
 As of Mar 19 2018, Todd Wolfson has released this repository and its contents to the public domain.
