@@ -67,6 +67,9 @@ We've skipped these projects due to requiring a non-3rd party hosting service (e
             ]
         }
         ```
+    - Ran `git bigstore init` which generated `.bigstore`
+        - Normally we wouldn't ignore this for private repos and probably make something accessible for public repos
+    - Ugh, this is going to require its own push/pull. Okay, going to pause this and revisit another day
 
 ## Unlicense
 As of Mar 19 2018, Todd Wolfson has released this repository and its contents to the public domain.
