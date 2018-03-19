@@ -10,11 +10,11 @@ This list from <https://www.perforce.com/blog/storing-large-binary-files-in-git-
 Some of these projects require their own one-off commands instead of `git add` and similar. We're skipping them for now as it'd be one more thing for developers to learn
 
 - [git-annex](http://git-annex.branchable.com/)
-    - :-1: Requires one-off commands and one-off branch for `git-annex` files
-        - http://git-annex.branchable.com/tips/centralized_git_repository_tutorial/on_GitHub/
-        - Would prefer "it just works" with `git add` and using `git` objects
-    - :+1: Seems to still be in development
-    - Could try out using but going to skip for now
+    - http://git-annex.branchable.com/tips/centralized_git_repository_tutorial/on_GitHub/
+- [git-media](https://github.com/alebedev/git-media)
+    - :question_mark: Not updated in 3 years but could be feature complete
+
+## Skipped: Too custom
 - [git-lfs](https://git-lfs.github.com/)
     - :-1: Requires custom server which likely means using GitHub's server
         - GitHub's server costs $5/month, even if not many files are stored (e.g. 100kb -> $5, 5MB -> $5, 1GB -> $5)
@@ -22,11 +22,6 @@ Some of these projects require their own one-off commands instead of `git add` a
 - [git-fat](https://github.com/jedbrown/git-fat)
     - :-1: Sounds great but only supports `rsync`
         - Would prefer a 3rd party hosting service like S3, Google Drive or similar
-    - Might come back later
-- [git-media](https://github.com/alebedev/git-media)
-    - :question_mark: Not updated in 3 years but could be feature complete
-    - :-1: Not integrated via `.gitattributes` so uses different commands (e.g. `git media sync` instead of `git add`)
-    - Could try out using but going to skip for now
 
 ## Unlicense
 As of Mar 19 2018, Todd Wolfson has released this repository and its contents to the public domain.
