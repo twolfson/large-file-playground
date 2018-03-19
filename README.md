@@ -50,6 +50,23 @@ We've skipped these projects due to requiring a non-3rd party hosting service (e
         six==1.11.0
         smmap==0.9.0
         ```
+    - Created S3 bucket `twolfson-git-large-files` with explicit policy under group
+        ```
+        {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Sid": "AllowS3TwolfsonGitLargeFilesAccess",
+                    "Effect": "Allow",
+                    "Action": "s3:*",
+                    "Resource": [
+                        "arn:aws:s3:::twolfson-git-large-files",
+                        "arn:aws:s3:::twolfson-git-large-files/*"
+                    ]
+                }
+            ]
+        }
+        ```
 
 ## Unlicense
 As of Mar 19 2018, Todd Wolfson has released this repository and its contents to the public domain.
